@@ -1,0 +1,47 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS TRACKER</title>
+    <link rel="stylesheet"  type="text/css" href="style.css"/>
+</head>
+<body>
+    <!--Title Text-->
+    <div class="welcome-msg">
+        <h1><br></h1>
+        <b>ISS TRACKER</b>
+    </div>
+    <!--Video Background-->
+    <div class="headerVD">
+        <video autoplay muted loop id="myVideo">
+            <source src="earthvid.webm" type="video/mp4">
+        </video>
+    </div>
+    <!--Location Input Container-->
+    <div class="location-input-container">
+        <div class="location-inputs">
+            <div class="city">
+                <input type="text"  id="city" placeholder="City"/>
+            </div>
+            <div class="state">
+                <input type="text" id="state" placeholder="State"/>
+            </div>
+        </div>
+        <button id="submit-location">Submit</button>
+    </div>
+    <!--Coordinates Container -->
+    <div class="coordinates-container">
+        <div class="user-coordinates">
+            <h5>Coordinates</h5>
+            <span></span>
+        </div>
+        <div class="distance">
+            <h5>Distance</h5>
+            <span></span>
+        </div>
+    </div>
+    <script></script>
+
+    
+</body>
+</html>
