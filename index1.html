@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS TRACKER</title>
+    <div class="Const"
+      ><p>
+        Please use Chrome browser <br>
+        *Temporarily unavailable - implementing backend javascript*</p>
+    </div>
+
+    <link rel="stylesheet"  type="text/css" href="style.css"/>
+
+</head>
+<body>
+    <!--Title Text-->
+    <div class="welcome-msg">
+        <h1><br></h1>
+        <b>ISS TRACKER</b>
+    </div>
+    <!--Video Background-->
+    <div class="headerVD">
+        <video autoplay muted loop id="myVideo">
+            <source src="earthvid.webm" type="video/webm">
+        </video>
+
+    <!--Location Input Container-->
+    <div class="location-input-container">
+        <div class="location-inputs">
+            <div class="city">
+                <input type="text"  id="city" placeholder="City"/>
+            </div>
+            <div class="state">
+                <input type="text" id="state" placeholder="State"/>
+            </div>
+        </div>
+        <button id="submit-location">Submit</button>
+    </div>
+    <!--Coordinates Container -->
+    <div class="coordinates-container">
+        <div class="user-coordinates">
+            <h5>Coordinates</h5>
+            <span></span>
+        </div>
+        <div class="distance">
+            <h5>Distance</h5>
+            <span></span>
+        </div>
+    </div>
+    ><div>
+    <script
+        src="https://code.jquery.com/jquery-3.5.0.js"
+        integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc="
+        crossorigin="anonymous"
+    ></script>
+    <script src="zoom.js" type="text/javascript"></script>
+
+</body>
+</html>
